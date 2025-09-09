@@ -1,0 +1,140 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:url("http://www.rw-designer.com/cursor-extern.php?id=64664"),auto;
+}
+
+h1{
+    font-size: 1.4em;
+    text-align:center;
+
+}
+
+a{
+    color:aqua;
+}
+
+a:hover{
+    cursor:url("http://www.rw-designer.com/cursor-extern.php?id=64664"),auto;
+}
+
+button:hover{
+    animation:glow 0.5s infinite forwards;
+    cursor:url("http://www.rw-designer.com/cursor-extern.php?id=64664"),auto;
+}
+
+#content{
+    z-index:1;
+    
+}
+
+#disclaimer{
+    position:absolute;
+    top:10px;
+    right:20px;
+}
+
+#animtext{
+  width:100vw;
+  animation:explode 2s 1s forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes explode {
+    0% {letter-spacing:0.1em;opacity:1;}
+    50% {letter-spacing:1em;opacity:0;}
+    100% {letter-spacing:0.01em;opacity:1;}
+}
+
+#logo{
+    width:50%;
+    display:block;
+    margin:auto;
+}
+
+#bgvid{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background: no-repeat center;
+  user-select: none;
+  pointer-events: none;
+  z-index:-1;
+  filter: brightness(0.4);
+  
+  height: 100%;
+  width: 177.77777778vh;
+  min-width: 100%;
+  min-height: 56.25vw;
+}
+
+#foodgif1{
+    top:20px;
+    left:20px;
+}
+
+#foodgif2{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+
+#buttongrid{
+    padding:20px;
+    margin:auto auto auto 34%;
+    display:inline-grid;
+    grid-template-columns:repeat(6,auto);
+    grid-column-gap:20px;
+}
+
+.vidgrid{
+    z-index:1;
+    padding:40px;
+    margin:auto;
+    width:80%;
+    display:grid;
+    grid-template-columns:repeat(3, 1.8fr);
+    grid-template-rows:auto;
+    grid-column-gap:10px;
+    grid-row-gap:20px;
+}
+
+.page{
+  top:0;
+  left:0;
+  color: #f1f1f1;
+  width: 100%;
+  height:100%;
+}
+
+.card{
+    background-color:rgba(0,0,0,.5);
+    padding:20px;
+    width:80%;
+    display:block;
+    margin:0px;
+    border: 1px solid cyan;
+}
+
+
+.card:hover{
+    animation:glow 1s infinite alternate;
+    
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px magenta;
+  }
+  to {
+    box-shadow: 0 0 10px 10px magenta;
+  }
+}
+
+.vidtitles{
+    font-size:1em;
+}
+
+.thumbnail{
+    width:100%;
+}
